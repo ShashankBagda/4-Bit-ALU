@@ -1,0 +1,123 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000022f9806da50 .scope module, "testbench" "testbench" 2 44;
+ .timescale 0 0;
+v0000022f98001830_0 .var "A", 3 0;
+v0000022f98001e70_0 .net "And", 3 0, L_0000022f97f94910;  1 drivers
+v0000022f98000b10_0 .var "B", 3 0;
+v0000022f98000e30_0 .net "Diff", 7 0, L_0000022f98000d90;  1 drivers
+v0000022f980011f0_0 .net "Or", 3 0, L_0000022f97f94980;  1 drivers
+v0000022f98002050_0 .net "Product", 7 0, L_0000022f98001470;  1 drivers
+v0000022f980022d0_0 .net "Quotient", 7 0, L_0000022f98000bb0;  1 drivers
+v0000022f98000ed0_0 .net "Sum", 7 0, L_0000022f98001790;  1 drivers
+v0000022f980013d0_0 .net "Xor", 3 0, L_0000022f97f949f0;  1 drivers
+v0000022f98002730_0 .net "not_a", 3 0, L_0000022f9804bab0;  1 drivers
+v0000022f98001330_0 .net "not_b", 3 0, L_0000022f9804bd50;  1 drivers
+S_0000022f9806dbe0 .scope module, "UUT" "four_bit_operations" 2 52, 2 2 0, S_0000022f9806da50;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "A";
+    .port_info 1 /INPUT 4 "B";
+    .port_info 2 /OUTPUT 8 "Sum";
+    .port_info 3 /OUTPUT 8 "Diff";
+    .port_info 4 /OUTPUT 8 "Product";
+    .port_info 5 /OUTPUT 8 "Quotient";
+    .port_info 6 /OUTPUT 4 "And";
+    .port_info 7 /OUTPUT 4 "Or";
+    .port_info 8 /OUTPUT 4 "Xor";
+    .port_info 9 /OUTPUT 4 "not_a";
+    .port_info 10 /OUTPUT 4 "not_b";
+L_0000022f97f94910 .functor AND 4, v0000022f98001830_0, v0000022f98000b10_0, C4<1111>, C4<1111>;
+L_0000022f97f94980 .functor OR 4, v0000022f98001830_0, v0000022f98000b10_0, C4<0000>, C4<0000>;
+L_0000022f97f949f0 .functor XOR 4, v0000022f98001830_0, v0000022f98000b10_0, C4<0000>, C4<0000>;
+L_0000022f9804bab0 .functor NOT 4, v0000022f98001830_0, C4<0000>, C4<0000>, C4<0000>;
+L_0000022f9804bd50 .functor NOT 4, v0000022f98000b10_0, C4<0000>, C4<0000>, C4<0000>;
+v0000022f97f9a290_0 .net "A", 3 0, v0000022f98001830_0;  1 drivers
+v0000022f97f99a70_0 .net "And", 3 0, L_0000022f97f94910;  alias, 1 drivers
+v0000022f97f99930_0 .net "B", 3 0, v0000022f98000b10_0;  1 drivers
+v0000022f97f99c50_0 .net "Diff", 7 0, L_0000022f98000d90;  alias, 1 drivers
+v0000022f97f9a0b0_0 .net "Or", 3 0, L_0000022f97f94980;  alias, 1 drivers
+v0000022f97f997f0_0 .net "Product", 7 0, L_0000022f98001470;  alias, 1 drivers
+v0000022f97f99cf0_0 .net "Quotient", 7 0, L_0000022f98000bb0;  alias, 1 drivers
+v0000022f97f999d0_0 .net "Sum", 7 0, L_0000022f98001790;  alias, 1 drivers
+v0000022f97f99e30_0 .net "Xor", 3 0, L_0000022f97f949f0;  alias, 1 drivers
+v0000022f97f9a470_0 .net *"_ivl_0", 7 0, L_0000022f980020f0;  1 drivers
+v0000022f97f99f70_0 .net *"_ivl_10", 7 0, L_0000022f98000930;  1 drivers
+L_0000022f98002cf8 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0000022f97f99b10_0 .net *"_ivl_13", 3 0, L_0000022f98002cf8;  1 drivers
+v0000022f97f9a010_0 .net *"_ivl_14", 7 0, L_0000022f98001ab0;  1 drivers
+L_0000022f98002d40 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0000022f97f9a3d0_0 .net *"_ivl_17", 3 0, L_0000022f98002d40;  1 drivers
+v0000022f97f9a150_0 .net *"_ivl_20", 7 0, L_0000022f980025f0;  1 drivers
+L_0000022f98002d88 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0000022f97f9a510_0 .net *"_ivl_23", 3 0, L_0000022f98002d88;  1 drivers
+v0000022f97f9a330_0 .net *"_ivl_24", 7 0, L_0000022f98000f70;  1 drivers
+L_0000022f98002dd0 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0000022f97f9a650_0 .net *"_ivl_27", 3 0, L_0000022f98002dd0;  1 drivers
+L_0000022f98002c68 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0000022f98001290_0 .net *"_ivl_3", 3 0, L_0000022f98002c68;  1 drivers
+v0000022f98002550_0 .net *"_ivl_30", 7 0, L_0000022f98000a70;  1 drivers
+L_0000022f98002e18 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0000022f98001d30_0 .net *"_ivl_33", 3 0, L_0000022f98002e18;  1 drivers
+v0000022f980009d0_0 .net *"_ivl_34", 7 0, L_0000022f98002690;  1 drivers
+L_0000022f98002e60 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0000022f98001fb0_0 .net *"_ivl_37", 3 0, L_0000022f98002e60;  1 drivers
+v0000022f980010b0_0 .net *"_ivl_4", 7 0, L_0000022f98001f10;  1 drivers
+L_0000022f98002cb0 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0000022f98000890_0 .net *"_ivl_7", 3 0, L_0000022f98002cb0;  1 drivers
+v0000022f98001dd0_0 .net "not_a", 3 0, L_0000022f9804bab0;  alias, 1 drivers
+v0000022f980015b0_0 .net "not_b", 3 0, L_0000022f9804bd50;  alias, 1 drivers
+L_0000022f980020f0 .concat [ 4 4 0 0], v0000022f98001830_0, L_0000022f98002c68;
+L_0000022f98001f10 .concat [ 4 4 0 0], v0000022f98000b10_0, L_0000022f98002cb0;
+L_0000022f98001790 .arith/sum 8, L_0000022f980020f0, L_0000022f98001f10;
+L_0000022f98000930 .concat [ 4 4 0 0], v0000022f98001830_0, L_0000022f98002cf8;
+L_0000022f98001ab0 .concat [ 4 4 0 0], v0000022f98000b10_0, L_0000022f98002d40;
+L_0000022f98000d90 .arith/sub 8, L_0000022f98000930, L_0000022f98001ab0;
+L_0000022f980025f0 .concat [ 4 4 0 0], v0000022f98001830_0, L_0000022f98002d88;
+L_0000022f98000f70 .concat [ 4 4 0 0], v0000022f98000b10_0, L_0000022f98002dd0;
+L_0000022f98001470 .arith/mult 8, L_0000022f980025f0, L_0000022f98000f70;
+L_0000022f98000a70 .concat [ 4 4 0 0], v0000022f98001830_0, L_0000022f98002e18;
+L_0000022f98002690 .concat [ 4 4 0 0], v0000022f98000b10_0, L_0000022f98002e60;
+L_0000022f98000bb0 .arith/div 8, L_0000022f98000a70, L_0000022f98002690;
+    .scope S_0000022f9806da50;
+T_0 ;
+    %vpi_call 2 68 "$display", "\000" {0 0 0};
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0000022f98001830_0, 0, 4;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v0000022f98000b10_0, 0, 4;
+    %delay 10, 0;
+    %vpi_call 2 78 "$display", "Value of A = %b", v0000022f98001830_0 {0 0 0};
+    %vpi_call 2 79 "$display", "Value of B = %b", v0000022f98000b10_0 {0 0 0};
+    %vpi_call 2 80 "$display", "\000" {0 0 0};
+    %vpi_call 2 82 "$display", "Sum = %b", v0000022f98000ed0_0 {0 0 0};
+    %vpi_call 2 83 "$display", "\000" {0 0 0};
+    %vpi_call 2 85 "$display", "Difference = %b", v0000022f98000e30_0 {0 0 0};
+    %vpi_call 2 86 "$display", "\000" {0 0 0};
+    %vpi_call 2 88 "$display", "Product = %b", v0000022f98002050_0 {0 0 0};
+    %vpi_call 2 89 "$display", "\000" {0 0 0};
+    %vpi_call 2 91 "$display", "Quotient = %b", v0000022f980022d0_0 {0 0 0};
+    %vpi_call 2 92 "$display", "\000" {0 0 0};
+    %vpi_call 2 94 "$display", "AND = %b", v0000022f98001e70_0 {0 0 0};
+    %vpi_call 2 95 "$display", "\000" {0 0 0};
+    %vpi_call 2 97 "$display", "OR = %b", v0000022f980011f0_0 {0 0 0};
+    %vpi_call 2 98 "$display", "\000" {0 0 0};
+    %vpi_call 2 100 "$display", "NOT of A = %b", v0000022f98002730_0 {0 0 0};
+    %vpi_call 2 101 "$display", "NOT of B = %b", v0000022f98001330_0 {0 0 0};
+    %vpi_call 2 102 "$display", "\000" {0 0 0};
+    %vpi_call 2 104 "$display", "XOR = %b", v0000022f980013d0_0 {0 0 0};
+    %vpi_call 2 105 "$display", "\000" {0 0 0};
+    %vpi_call 2 108 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "verilog.v";
