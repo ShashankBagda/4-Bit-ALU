@@ -67,8 +67,8 @@ module testbench;
   initial begin
   $display("");
     // Assign values to signals
-    A = 4'b0000;
-    B = 4'b1111;
+    A = 4'b1101;
+    B = 4'b1010;
 
     // Wait for some time for simulation to run
     #10;
