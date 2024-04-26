@@ -7,20 +7,20 @@
 :vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
-S_000002114e7ede80 .scope module, "testbench" "testbench" 2 44;
+S_00000180b1b2daa0 .scope module, "testbench" "testbench" 2 44;
  .timescale 0 0;
-v000002114e890c00_0 .var "A", 3 0;
-v000002114e891060_0 .net "And", 3 0, L_000002114e7eb520;  1 drivers
-v000002114e88fb20_0 .var "B", 3 0;
-v000002114e88fa80_0 .net "Diff", 7 0, L_000002114e88fd00;  1 drivers
-v000002114e890fc0_0 .net "Or", 3 0, L_000002114e7eafe0;  1 drivers
-v000002114e891240_0 .net "Product", 7 0, L_000002114e891380;  1 drivers
-v000002114e890a20_0 .net "Quotient", 7 0, L_000002114e891560;  1 drivers
-v000002114e88fda0_0 .net "Sum", 7 0, L_000002114e88fc60;  1 drivers
-v000002114e891100_0 .net "Xor", 3 0, L_000002114e7eb050;  1 drivers
-v000002114e890ac0_0 .net "not_a", 3 0, L_000002114e8da5e0;  1 drivers
-v000002114e890660_0 .net "not_b", 3 0, L_000002114e8da7a0;  1 drivers
-S_000002114e7ee010 .scope module, "UUT" "four_bit_operations" 2 52, 2 2 0, S_000002114e7ede80;
+v00000180b1bd1cb0_0 .var "A", 3 0;
+v00000180b1bd22f0_0 .net "And", 3 0, L_00000180b1b649f0;  1 drivers
+v00000180b1bd18f0_0 .var "B", 3 0;
+v00000180b1bd2610_0 .net "Diff", 7 0, L_00000180b1bd2390;  1 drivers
+v00000180b1bd1ad0_0 .net "Or", 3 0, L_00000180b1b64a60;  1 drivers
+v00000180b1bd13f0_0 .net "Product", 7 0, L_00000180b1bd2110;  1 drivers
+v00000180b1bd1710_0 .net "Quotient", 7 0, L_00000180b1bd15d0;  1 drivers
+v00000180b1bd2250_0 .net "Sum", 7 0, L_00000180b1bd0e50;  1 drivers
+v00000180b1bd1c10_0 .net "Xor", 3 0, L_00000180b1b64b40;  1 drivers
+v00000180b1bd0950_0 .net "not_a", 3 0, L_00000180b1c1b480;  1 drivers
+v00000180b1bd1fd0_0 .net "not_b", 3 0, L_00000180b1c1b950;  1 drivers
+S_00000180b1b2dc30 .scope module, "UUT" "four_bit_operations" 2 52, 2 2 0, S_00000180b1b2daa0;
  .timescale 0 0;
     .port_info 0 /INPUT 4 "A";
     .port_info 1 /INPUT 4 "B";
@@ -33,85 +33,85 @@ S_000002114e7ee010 .scope module, "UUT" "four_bit_operations" 2 52, 2 2 0, S_000
     .port_info 8 /OUTPUT 4 "Xor";
     .port_info 9 /OUTPUT 4 "not_a";
     .port_info 10 /OUTPUT 4 "not_b";
-L_000002114e7eb520 .functor AND 4, v000002114e890c00_0, v000002114e88fb20_0, C4<1111>, C4<1111>;
-L_000002114e7eafe0 .functor OR 4, v000002114e890c00_0, v000002114e88fb20_0, C4<0000>, C4<0000>;
-L_000002114e7eb050 .functor XOR 4, v000002114e890c00_0, v000002114e88fb20_0, C4<0000>, C4<0000>;
-L_000002114e8da5e0 .functor NOT 4, v000002114e890c00_0, C4<0000>, C4<0000>, C4<0000>;
-L_000002114e8da7a0 .functor NOT 4, v000002114e88fb20_0, C4<0000>, C4<0000>, C4<0000>;
-v000002114e829f10_0 .net "A", 3 0, v000002114e890c00_0;  1 drivers
-v000002114e829ab0_0 .net "And", 3 0, L_000002114e7eb520;  alias, 1 drivers
-v000002114e829b50_0 .net "B", 3 0, v000002114e88fb20_0;  1 drivers
-v000002114e829290_0 .net "Diff", 7 0, L_000002114e88fd00;  alias, 1 drivers
-v000002114e829830_0 .net "Or", 3 0, L_000002114e7eafe0;  alias, 1 drivers
-v000002114e829c90_0 .net "Product", 7 0, L_000002114e891380;  alias, 1 drivers
-v000002114e829d30_0 .net "Quotient", 7 0, L_000002114e891560;  alias, 1 drivers
-v000002114e829330_0 .net "Sum", 7 0, L_000002114e88fc60;  alias, 1 drivers
-v000002114e829fb0_0 .net "Xor", 3 0, L_000002114e7eb050;  alias, 1 drivers
-v000002114e8298d0_0 .net *"_ivl_0", 7 0, L_000002114e88fbc0;  1 drivers
-v000002114e829bf0_0 .net *"_ivl_10", 7 0, L_000002114e88fee0;  1 drivers
-L_000002114e8918f8 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
-v000002114e829dd0_0 .net *"_ivl_13", 3 0, L_000002114e8918f8;  1 drivers
-v000002114e8293d0_0 .net *"_ivl_14", 7 0, L_000002114e8911a0;  1 drivers
-L_000002114e891940 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
-v000002114e829510_0 .net *"_ivl_17", 3 0, L_000002114e891940;  1 drivers
-v000002114e829e70_0 .net *"_ivl_20", 7 0, L_000002114e8912e0;  1 drivers
-L_000002114e891988 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
-v000002114e82a050_0 .net *"_ivl_23", 3 0, L_000002114e891988;  1 drivers
-v000002114e829a10_0 .net *"_ivl_24", 7 0, L_000002114e8908e0;  1 drivers
-L_000002114e8919d0 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
-v000002114e8296f0_0 .net *"_ivl_27", 3 0, L_000002114e8919d0;  1 drivers
-L_000002114e891868 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
-v000002114e88ff80_0 .net *"_ivl_3", 3 0, L_000002114e891868;  1 drivers
-v000002114e890160_0 .net *"_ivl_30", 7 0, L_000002114e88f8a0;  1 drivers
-L_000002114e891a18 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
-v000002114e890de0_0 .net *"_ivl_33", 3 0, L_000002114e891a18;  1 drivers
-v000002114e890d40_0 .net *"_ivl_34", 7 0, L_000002114e891420;  1 drivers
-L_000002114e891a60 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
-v000002114e890020_0 .net *"_ivl_37", 3 0, L_000002114e891a60;  1 drivers
-v000002114e890980_0 .net *"_ivl_4", 7 0, L_000002114e8914c0;  1 drivers
-L_000002114e8918b0 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
-v000002114e890e80_0 .net *"_ivl_7", 3 0, L_000002114e8918b0;  1 drivers
-v000002114e890f20_0 .net "not_a", 3 0, L_000002114e8da5e0;  alias, 1 drivers
-v000002114e890ca0_0 .net "not_b", 3 0, L_000002114e8da7a0;  alias, 1 drivers
-L_000002114e88fbc0 .concat [ 4 4 0 0], v000002114e890c00_0, L_000002114e891868;
-L_000002114e8914c0 .concat [ 4 4 0 0], v000002114e88fb20_0, L_000002114e8918b0;
-L_000002114e88fc60 .arith/sum 8, L_000002114e88fbc0, L_000002114e8914c0;
-L_000002114e88fee0 .concat [ 4 4 0 0], v000002114e890c00_0, L_000002114e8918f8;
-L_000002114e8911a0 .concat [ 4 4 0 0], v000002114e88fb20_0, L_000002114e891940;
-L_000002114e88fd00 .arith/sub 8, L_000002114e88fee0, L_000002114e8911a0;
-L_000002114e8912e0 .concat [ 4 4 0 0], v000002114e890c00_0, L_000002114e891988;
-L_000002114e8908e0 .concat [ 4 4 0 0], v000002114e88fb20_0, L_000002114e8919d0;
-L_000002114e891380 .arith/mult 8, L_000002114e8912e0, L_000002114e8908e0;
-L_000002114e88f8a0 .concat [ 4 4 0 0], v000002114e890c00_0, L_000002114e891a18;
-L_000002114e891420 .concat [ 4 4 0 0], v000002114e88fb20_0, L_000002114e891a60;
-L_000002114e891560 .arith/div 8, L_000002114e88f8a0, L_000002114e891420;
-    .scope S_000002114e7ede80;
+L_00000180b1b649f0 .functor AND 4, v00000180b1bd1cb0_0, v00000180b1bd18f0_0, C4<1111>, C4<1111>;
+L_00000180b1b64a60 .functor OR 4, v00000180b1bd1cb0_0, v00000180b1bd18f0_0, C4<0000>, C4<0000>;
+L_00000180b1b64b40 .functor XOR 4, v00000180b1bd1cb0_0, v00000180b1bd18f0_0, C4<0000>, C4<0000>;
+L_00000180b1c1b480 .functor NOT 4, v00000180b1bd1cb0_0, C4<0000>, C4<0000>, C4<0000>;
+L_00000180b1c1b950 .functor NOT 4, v00000180b1bd18f0_0, C4<0000>, C4<0000>, C4<0000>;
+v00000180b1b69ed0_0 .net "A", 3 0, v00000180b1bd1cb0_0;  1 drivers
+v00000180b1b699d0_0 .net "And", 3 0, L_00000180b1b649f0;  alias, 1 drivers
+v00000180b1b69a70_0 .net "B", 3 0, v00000180b1bd18f0_0;  1 drivers
+v00000180b1b6a290_0 .net "Diff", 7 0, L_00000180b1bd2390;  alias, 1 drivers
+v00000180b1b6a470_0 .net "Or", 3 0, L_00000180b1b64a60;  alias, 1 drivers
+v00000180b1b6a510_0 .net "Product", 7 0, L_00000180b1bd2110;  alias, 1 drivers
+v00000180b1b6a5b0_0 .net "Quotient", 7 0, L_00000180b1bd15d0;  alias, 1 drivers
+v00000180b1b69b10_0 .net "Sum", 7 0, L_00000180b1bd0e50;  alias, 1 drivers
+v00000180b1b6a1f0_0 .net "Xor", 3 0, L_00000180b1b64b40;  alias, 1 drivers
+v00000180b1b69cf0_0 .net *"_ivl_0", 7 0, L_00000180b1bd1d50;  1 drivers
+v00000180b1b69890_0 .net *"_ivl_10", 7 0, L_00000180b1bd2070;  1 drivers
+L_00000180b1bd2d18 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v00000180b1b69f70_0 .net *"_ivl_13", 3 0, L_00000180b1bd2d18;  1 drivers
+v00000180b1b6a650_0 .net *"_ivl_14", 7 0, L_00000180b1bd1490;  1 drivers
+L_00000180b1bd2d60 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v00000180b1b6a150_0 .net *"_ivl_17", 3 0, L_00000180b1bd2d60;  1 drivers
+v00000180b1b69bb0_0 .net *"_ivl_20", 7 0, L_00000180b1bd0f90;  1 drivers
+L_00000180b1bd2da8 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v00000180b1b6a010_0 .net *"_ivl_23", 3 0, L_00000180b1bd2da8;  1 drivers
+v00000180b1b69e30_0 .net *"_ivl_24", 7 0, L_00000180b1bd0c70;  1 drivers
+L_00000180b1bd2df0 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v00000180b1b6a0b0_0 .net *"_ivl_27", 3 0, L_00000180b1bd2df0;  1 drivers
+L_00000180b1bd2c88 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v00000180b1bd0d10_0 .net *"_ivl_3", 3 0, L_00000180b1bd2c88;  1 drivers
+v00000180b1bd1f30_0 .net *"_ivl_30", 7 0, L_00000180b1bd1030;  1 drivers
+L_00000180b1bd2e38 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v00000180b1bd21b0_0 .net *"_ivl_33", 3 0, L_00000180b1bd2e38;  1 drivers
+v00000180b1bd0db0_0 .net *"_ivl_34", 7 0, L_00000180b1bd2430;  1 drivers
+L_00000180b1bd2e80 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v00000180b1bd1df0_0 .net *"_ivl_37", 3 0, L_00000180b1bd2e80;  1 drivers
+v00000180b1bd0ef0_0 .net *"_ivl_4", 7 0, L_00000180b1bd1e90;  1 drivers
+L_00000180b1bd2cd0 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v00000180b1bd0bd0_0 .net *"_ivl_7", 3 0, L_00000180b1bd2cd0;  1 drivers
+v00000180b1bd0b30_0 .net "not_a", 3 0, L_00000180b1c1b480;  alias, 1 drivers
+v00000180b1bd1350_0 .net "not_b", 3 0, L_00000180b1c1b950;  alias, 1 drivers
+L_00000180b1bd1d50 .concat [ 4 4 0 0], v00000180b1bd1cb0_0, L_00000180b1bd2c88;
+L_00000180b1bd1e90 .concat [ 4 4 0 0], v00000180b1bd18f0_0, L_00000180b1bd2cd0;
+L_00000180b1bd0e50 .arith/sum 8, L_00000180b1bd1d50, L_00000180b1bd1e90;
+L_00000180b1bd2070 .concat [ 4 4 0 0], v00000180b1bd1cb0_0, L_00000180b1bd2d18;
+L_00000180b1bd1490 .concat [ 4 4 0 0], v00000180b1bd18f0_0, L_00000180b1bd2d60;
+L_00000180b1bd2390 .arith/sub 8, L_00000180b1bd2070, L_00000180b1bd1490;
+L_00000180b1bd0f90 .concat [ 4 4 0 0], v00000180b1bd1cb0_0, L_00000180b1bd2da8;
+L_00000180b1bd0c70 .concat [ 4 4 0 0], v00000180b1bd18f0_0, L_00000180b1bd2df0;
+L_00000180b1bd2110 .arith/mult 8, L_00000180b1bd0f90, L_00000180b1bd0c70;
+L_00000180b1bd1030 .concat [ 4 4 0 0], v00000180b1bd1cb0_0, L_00000180b1bd2e38;
+L_00000180b1bd2430 .concat [ 4 4 0 0], v00000180b1bd18f0_0, L_00000180b1bd2e80;
+L_00000180b1bd15d0 .arith/div 8, L_00000180b1bd1030, L_00000180b1bd2430;
+    .scope S_00000180b1b2daa0;
 T_0 ;
     %vpi_call 2 68 "$display", "\000" {0 0 0};
-    %pushi/vec4 13, 0, 4;
-    %store/vec4 v000002114e890c00_0, 0, 4;
-    %pushi/vec4 10, 0, 4;
-    %store/vec4 v000002114e88fb20_0, 0, 4;
+    %pushi/vec4 11, 0, 4;
+    %store/vec4 v00000180b1bd1cb0_0, 0, 4;
+    %pushi/vec4 5, 0, 4;
+    %store/vec4 v00000180b1bd18f0_0, 0, 4;
     %delay 10, 0;
-    %vpi_call 2 78 "$display", "Value of A = %b", v000002114e890c00_0 {0 0 0};
-    %vpi_call 2 79 "$display", "Value of B = %b", v000002114e88fb20_0 {0 0 0};
+    %vpi_call 2 78 "$display", "Value of A = %b", v00000180b1bd1cb0_0 {0 0 0};
+    %vpi_call 2 79 "$display", "Value of B = %b", v00000180b1bd18f0_0 {0 0 0};
     %vpi_call 2 80 "$display", "\000" {0 0 0};
-    %vpi_call 2 82 "$display", "Sum = %b", v000002114e88fda0_0 {0 0 0};
+    %vpi_call 2 82 "$display", "Sum = %b", v00000180b1bd2250_0 {0 0 0};
     %vpi_call 2 83 "$display", "\000" {0 0 0};
-    %vpi_call 2 85 "$display", "Difference = %b", v000002114e88fa80_0 {0 0 0};
+    %vpi_call 2 85 "$display", "Difference = %b", v00000180b1bd2610_0 {0 0 0};
     %vpi_call 2 86 "$display", "\000" {0 0 0};
-    %vpi_call 2 88 "$display", "Product = %b", v000002114e891240_0 {0 0 0};
+    %vpi_call 2 88 "$display", "Product = %b", v00000180b1bd13f0_0 {0 0 0};
     %vpi_call 2 89 "$display", "\000" {0 0 0};
-    %vpi_call 2 91 "$display", "Quotient = %b", v000002114e890a20_0 {0 0 0};
+    %vpi_call 2 91 "$display", "Quotient = %b", v00000180b1bd1710_0 {0 0 0};
     %vpi_call 2 92 "$display", "\000" {0 0 0};
-    %vpi_call 2 94 "$display", "AND = %b", v000002114e891060_0 {0 0 0};
+    %vpi_call 2 94 "$display", "AND = %b", v00000180b1bd22f0_0 {0 0 0};
     %vpi_call 2 95 "$display", "\000" {0 0 0};
-    %vpi_call 2 97 "$display", "OR = %b", v000002114e890fc0_0 {0 0 0};
+    %vpi_call 2 97 "$display", "OR = %b", v00000180b1bd1ad0_0 {0 0 0};
     %vpi_call 2 98 "$display", "\000" {0 0 0};
-    %vpi_call 2 100 "$display", "NOT of A = %b", v000002114e890ac0_0 {0 0 0};
-    %vpi_call 2 101 "$display", "NOT of B = %b", v000002114e890660_0 {0 0 0};
+    %vpi_call 2 100 "$display", "NOT of A = %b", v00000180b1bd0950_0 {0 0 0};
+    %vpi_call 2 101 "$display", "NOT of B = %b", v00000180b1bd1fd0_0 {0 0 0};
     %vpi_call 2 102 "$display", "\000" {0 0 0};
-    %vpi_call 2 104 "$display", "XOR = %b", v000002114e891100_0 {0 0 0};
+    %vpi_call 2 104 "$display", "XOR = %b", v00000180b1bd1c10_0 {0 0 0};
     %vpi_call 2 105 "$display", "\000" {0 0 0};
     %vpi_call 2 108 "$finish" {0 0 0};
     %end;
