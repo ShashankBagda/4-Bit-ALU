@@ -67,8 +67,8 @@
     initial begin
     $display("");
         // Assign values to signals
-        A = 4'b1011;
-        B = 4'b0101;
+        A = 4'b1010;
+        B = 4'b1111;
 
         // Wait for some time for simulation to run
         #10;
