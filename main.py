@@ -144,6 +144,8 @@ def write_to_file():
     output_text.delete(1.0, tk.END)
     output_text.insert(tk.END, result.stdout)
 
+    subprocess.Popen(["gtkwave", "verilog.vcd"])
+
 def is_valid_binary(input_str):
     return len(input_str) == 4 and all(char in "01" for char in input_str)
 
@@ -189,5 +191,29 @@ output_label.grid(row=4, column=0, columnspan=2, padx=10, pady=5)
 # Text widget for simulation output
 output_text = tk.Text(root, width=60, height=15, font=("Courier", 12))
 output_text.grid(row=5, column=0, columnspan=2, padx=10, pady=5)
+
+# Waveform display section
+waveform_label = tk.Label(root, text="Waveform View", font=("Helvetica", 12, "bold"))
+waveform_label.grid(row=6, column=0, columnspan=2, padx=10, pady=5)
+
+waveform_canvas = tk.Canvas(root, width=400, height=200, bg="lightgray")
+waveform_canvas.grid(row=7, column=0, columnspan=2, padx=10, pady=10)
+
+# Function to display a placeholder message on the waveform canvas
+def display_waveform_message(message):
+  waveform_canvas.delete("all")
+  waveform_text = waveform_canvas.create_text(waveform_canvas.winfo_width() / 2, 
+                                               waveform_canvas.winfo_height() / 2, 
+                                               text=message, font=("Helvetica", 12))
+  waveform_canvas.bind("<Button-1>", lambda event: launch_gtkwave())  # Bind click event
+
+# Initial message on waveform canvas
+display_waveform_message("Click here to launch GTKWave")
+
+def launch_gtkwave():
+  # Clear any previous message
+  waveform_canvas.delete("all")
+  # Launch GTKWave process
+  subprocess.Popen(["gtkwave", "verilog.vcd"])
 
 root.mainloop()

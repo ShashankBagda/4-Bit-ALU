@@ -1,0 +1,58 @@
+$date
+	Mon May 13 23:55:20 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var reg 4 ! A [3:0] $end
+$upscope $end
+$scope module testbench $end
+$var reg 4 " B [3:0] $end
+$upscope $end
+$scope module testbench $end
+$var wire 8 # Sum [7:0] $end
+$upscope $end
+$scope module testbench $end
+$var wire 8 $ Diff [7:0] $end
+$upscope $end
+$scope module testbench $end
+$var wire 8 % Product [7:0] $end
+$upscope $end
+$scope module testbench $end
+$var wire 8 & Quotient [7:0] $end
+$upscope $end
+$scope module testbench $end
+$var wire 4 ' And [3:0] $end
+$upscope $end
+$scope module testbench $end
+$var wire 4 ( Or [3:0] $end
+$upscope $end
+$scope module testbench $end
+$var wire 4 ) Xor [3:0] $end
+$upscope $end
+$scope module testbench $end
+$var wire 4 * not_a [3:0] $end
+$upscope $end
+$scope module testbench $end
+$var wire 4 + not_b [3:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 +
+b101 *
+b101 )
+b1111 (
+b1010 '
+b0 &
+b10010110 %
+b11111011 $
+b11001 #
+b1111 "
+b1010 !
+$end
+#10
